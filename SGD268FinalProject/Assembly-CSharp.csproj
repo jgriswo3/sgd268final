@@ -37,10 +37,13 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/GameManager.cs" />
-     <Compile Include="Assets/Scripts/PlayerController.cs" />
-     <Compile Include="Assets/Scripts/EnemyController.cs" />
-     <Compile Include="Assets/Scripts/CameraController.cs" />
-     <Compile Include="Assets/Scripts/GlobalVariables.cs" />
+     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs" />
+     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs" />
+     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" />
+     <Compile Include="Assets/Joystick Pack/Scripts/Base/Joystick.cs" />
+     <Compile Include="Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
+     <Compile Include="Assets/Joystick Pack/Examples/JoystickSetterExample.cs" />
+     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/eve/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
