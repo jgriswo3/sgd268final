@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     #region
     public AudioClip startGame;
     public AudioClip playerGun;
-    public AudioClip enemyGun;
+    public AudioClip selectItem;
+    public AudioClip getCoin;
     public AudioClip playerBomb;
     public AudioClip playerHit;
     public AudioClip enemyExplosion;
@@ -35,9 +36,9 @@ public class GameManager : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(playerGun, Camera.main.transform.position);
     }
-    public void EnemyGun()
+    public void SelectItem()
     {
-        AudioSource.PlayClipAtPoint(enemyGun, Camera.main.transform.position);
+        AudioSource.PlayClipAtPoint(selectItem, Camera.main.transform.position);
     }
     public void PlayerBomb()
     {
@@ -54,6 +55,10 @@ public class GameManager : MonoBehaviour
     public void DryTimer()
     {
         AudioSource.PlayClipAtPoint(dryTimer, Camera.main.transform.position);
+    }
+    public void GetCoin()
+    {
+        AudioSource.PlayClipAtPoint(getCoin, Camera.main.transform.position);
     }
     #endregion
 }

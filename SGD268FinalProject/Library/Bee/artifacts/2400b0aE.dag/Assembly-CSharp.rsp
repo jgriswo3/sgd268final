@@ -359,7 +359,10 @@
 "Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
+"Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/CameraOrbit.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/PlayerController.cs"
 -langversion:9.0
 
 /deterministic
