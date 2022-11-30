@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;
     public int speed;
     bool shoot;
+    public int health = 2000;
 
     // Start is called before the first frame update
     void Start()
@@ -34,5 +35,17 @@ public class PlayerController : MonoBehaviour
         {
             jump = false;
         }*/
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "enemy")
+        {
+            TakeDamage(10);
+        }
+    }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        GameManager.gm.PlayerHit();
     }
 }

@@ -7,6 +7,7 @@ MonoImporter:
   - startGame: {fileID: 8300000, guid: e9b147a93e14fb108a99c3fb6a84fbb9, type: 3}
   - playerGun: {fileID: 8300000, guid: 4a81d21ab35e66a5686ccc101e447506, type: 3}
   - selectItem: {fileID: 8300000, guid: 99d958a78ab1a8eaabf80ce8d18d2e6c, type: 3}
+  - getCoin: {fileID: 8300000, guid: aa31b12db5e577c2d91de18779bb9a23, type: 3}
   - playerBomb: {fileID: 8300000, guid: a8f5dc46b4af0070b899a7bd895876c8, type: 3}
   - playerHit: {fileID: 8300000, guid: 19aa852833aca8288aba53d8394becd3, type: 3}
   - enemyExplosion: {fileID: 8300000, guid: b28752832fc763ea090c8202142b22f5, type: 3}
