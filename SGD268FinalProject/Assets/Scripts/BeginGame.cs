@@ -7,6 +7,6 @@ public class BeginGame : MonoBehaviour
     // Start is called before the first frame update
     public void OnMouseDown()
     {
-        GameManager.gm.StartGame();
+        GameManager.gm.InsertCoin();
     }
 }

@@ -25,12 +25,17 @@ public class GameManager : MonoBehaviour
         else
             Destroy(this);
     }
+    public float gameSpeed;
+    public int score;
     public Text scoreText;
     //The following region contains functions for playing audio clips.
     #region
-    public void StartGame()
+    public void InsertCoin()
     {
         SceneManager.LoadScene("MainLevel");
+    }
+    public void StartGame()
+    {
         AudioSource.PlayClipAtPoint(startGame, Camera.main.transform.position);
     }
     public void PlayerGun()
@@ -61,9 +66,18 @@ public class GameManager : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(getCoin, Camera.main.transform.position);
     }
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+    public void ScoreUp()
+    {
+        score += 1;
+        scoreText.text = "Score: " + score;
     }
     #endregion
 }

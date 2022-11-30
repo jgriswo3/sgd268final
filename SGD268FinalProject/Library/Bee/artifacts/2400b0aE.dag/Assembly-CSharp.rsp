@@ -364,6 +364,7 @@
 "Assets/Scripts/CameraOrbit.cs"
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/GameOver.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:9.0
 
