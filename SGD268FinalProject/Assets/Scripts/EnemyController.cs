@@ -33,7 +33,8 @@ public class EnemyController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            transform.position -= transform.forward * moveSpeed;
+            rb.velocity = Vector3.zero;
+            transform.position -= (transform.forward * moveSpeed)/2;
         }
     }
 }
