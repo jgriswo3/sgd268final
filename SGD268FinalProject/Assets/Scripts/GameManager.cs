@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     #region
     public void StartGame()
     {
+        SceneManager.LoadScene("MainLevel");
         AudioSource.PlayClipAtPoint(startGame, Camera.main.transform.position);
     }
     public void PlayerGun()
@@ -59,6 +60,10 @@ public class GameManager : MonoBehaviour
     public void GetCoin()
     {
         AudioSource.PlayClipAtPoint(getCoin, Camera.main.transform.position);
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
     #endregion
 }

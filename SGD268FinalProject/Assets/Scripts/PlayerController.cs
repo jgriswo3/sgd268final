@@ -9,13 +9,12 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;
     public int speed;
     bool shoot;
-    public int health = 2000;
+    public int health = 1000;
 
     // Start is called before the first frame update
     void Start()
     {
         joystick = FindObjectOfType<Joystick>();
-        //joybutton = FindObjectOfType<JoyButton>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -23,24 +22,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector3(joystick.Horizontal * speed, rb.velocity.y, joystick.Vertical * speed);
-        /*if(!jump && joybutton.Pressed)
-        {
-            if(transform.position.y <= 40000f)
-            {
-                rb.AddForce(Vector3.up * jumpForce);
-                jump = true;
-            }
-        }
-        if(jump && !joybutton.Pressed)
-        {
-            jump = false;
-        }*/
+        if(health < 0)
+            GameManager.gm.MainMenu();
     }
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "enemy")
+        if(collision.gameObject.tag == "Enemy")
         {
-            TakeDamage(10);
+            TakeDamage(15);
         }
     }
     public void TakeDamage(int damage)
